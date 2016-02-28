@@ -7,6 +7,7 @@ from BeautifulSoup import BeautifulSoup
 filename = "userlist.txt"
 masterUserList = [] #Only nice clean no duplicate data can go here. 
 userFollowingArray = [] #Holds all the userlist for a single user
+totalNewUsers = 0
 
 #=========================================
 #Checking to see if our file already exists
@@ -112,21 +113,32 @@ def getRandomUser(givenList):
 	return user
 
 #This loop is the bread and the butter of our script
-for i in range(0, 10):
+for i in range(0, 200):
 	#Grabbing a user name to scrape
 	strUser = getRandomUser(masterUserList)
 	#Scraping
-	grabUserWatchers(strUser, userFollowingArray)
-	#Clean the list from the single user. 
+	grabUserWatchers(strUser, userFollowingArray)	
+	#Clean the list from the single user.
 	userFollowingArray = cleanListOfDuplicates(userFollowingArray)
+
+	startingSize = len(masterUserList)
 	#Adding to the master user
 	masterUserList.extend(userFollowingArray)
 	userFollowingArray = []
 	masterUserList = cleanListOfDuplicates(masterUserList)
+	endingSize = len(masterUserList)
+
+	#Calc our new usernames. 
+	newUsersFound = endingSize -startingSize
+	print "Found "+str(newUsersFound)+" new users!"
+	totalNewUsers = totalNewUsers + newUsersFound
+	newUsersFound = 0
 
 #Sorting and cleaning our list alpabetically
 masterUserList.sort()
-
+totalUsers = len(masterUserList)
+print "Found a total of "+ str(totalNewUsers)+" new users. "
+print "We have "+str(totalUsers)+" users!"
 #Saving and closing our file. 
 saveFile = open(filename, 'w')
 saveFile.write("\n".join(masterUserList))
