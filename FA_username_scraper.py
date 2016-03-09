@@ -113,7 +113,7 @@ def getRandomUser(givenList):
 	return user
 
 #This loop is the bread and the butter of our script
-for i in range(0, 200):
+for i in range(0, 50):
 	#Grabbing a user name to scrape
 	strUser = getRandomUser(masterUserList)
 	#Scraping
