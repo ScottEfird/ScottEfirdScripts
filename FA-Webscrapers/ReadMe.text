@@ -5,7 +5,6 @@ There are a few helper scrapers that I wrote just to better handle the files too
 
 Most of the up to date (3/13/2016) is in the excel file. (clean_userdata.xlsx)
 
-
 FA_freeArtFinder.py
 	This scraper checks a profile to see if they are offering to do free artowrk. Right now it returns a 
 	incorrect account about 80% of the time. Needs work to make it more effective, might play with applying some
