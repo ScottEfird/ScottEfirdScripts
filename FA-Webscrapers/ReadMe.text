@@ -3,4 +3,21 @@ This is a collection of webscrapers for the popular art website furaffinity, the
 Most of them use Beautifulsoup to scrape userpages, checking for information and recording it into text files. After that I just run basic analytics on it. 
 There are a few helper scrapers that I wrote just to better handle the files too. 
 
-Most of the up to date (3/13/2016) is in the excel file. 
+Most of the up to date (3/13/2016) is in the excel file. (clean_userdata.xlsx)
+
+
+FA_freeArtFinder.py
+	This scraper checks a profile to see if they are offering to do free artowrk. Right now it returns a 
+	incorrect account about 80% of the time. Needs work to make it more effective, might play with applying some
+	some form of learning to it. 
+
+FA_profile_info_scraper.py
+	Grabs all the profile data from an account and puts it in our userdata file. Requires the userlist.text file
+	to run off of the known usernames. 
+	
+	FA_removeDisabledUsers.py
+		This removes the disabled users from the userList.text file. 
+
+FA_username_scraper.py
+	Finds usernames and puts them into userlist! Does not find users with zero activity
+
