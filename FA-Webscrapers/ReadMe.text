@@ -1,1 +1,6 @@
+This is a collection of webscrapers for the popular art website furaffinity, they are all written in Python as a fun side project. 
 
+Most of them use Beautifulsoup to scrape userpages, checking for information and recording it into text files. After that I just run basic analytics on it. 
+There are a few helper scrapers that I wrote just to better handle the files too. 
+
+Most of the up to date (3/13/2016) is in the excel file. 
