@@ -11,7 +11,7 @@ generations = 10
 #2D board for holding our little world. 
 gameBoard = [[random.choice('0001') for i in range(boardSizeX)] for j in range(boardSizeY)]
 
-clear = lambda: os.system('cls')
+clear = lambda: os.system('cls') #Note, I might need to add a funtion for "clear" in unix boxes TODO
 #====================================================
 #Creates our game board header with a dynamic centering title. Woo!
 def printBoardHeader():
