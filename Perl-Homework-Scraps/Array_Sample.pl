@@ -9,6 +9,7 @@ foreach $revLine (@rev){
 }
 
 #Problem 2
+#--------------------------------------------------------------
 %friends_ages = ("Allen", 23,
                  "Lisa", 19,
                  "Alice", 29,
