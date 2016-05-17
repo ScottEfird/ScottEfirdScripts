@@ -41,7 +41,11 @@ public class main {
 	 */
 	public static void projectInit() {
 		JLabel imgLabel = new JLabel(new ImageIcon("src/images/1.png"));
-		JPanel.add(imgLabel);
+		
+		
+		Image image = Toolkit.getDefaultToolkit().getImage("src/images/1.png");
+		ImageIcon icon = new ImageIcon(image);				
+		JPanel.add(icon);
 		JPanel.revalidate();
 		JPanel.repaint();
 		
