@@ -7,7 +7,7 @@ Part of a year long class at UWyo, we worked with the software development compa
 
 https://agilestudent.azurewebsites.net/
 
-Everything else in here is old and outdated but is handly to have, feel free to contact me at efirds@hotmail.com
+There are some personal projects here and some old code I'm keeping around, feel free to contact me at efirds@hotmail.com
 for any questions. 
 
 Thanks,
