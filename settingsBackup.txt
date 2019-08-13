@@ -1,0 +1,95 @@
+alias cls="clear"
+alias redon="redshift -O 3000"
+alias redoff="redshift -O 6500"
+alias restarti="sudo service network-manager restart"
+alias weather="curl wttr.in/albuquerque"
+
+// Place your settings in this file to overwrite the default settings
+{
+  "eslint.options": {},
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.renderIndentGuides": true,
+  "javascript.validate.enable": false,
+  "eslint.run": "onSave",
+  "files.autoSave": "off",
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "window.zoomLevel": 0,
+  "zenMode.hideTabs": false,
+  "zenMode.hideStatusBar": true,
+  "zenMode.centerLayout": true,
+  "window.menuBarVisibility": "toggle",
+  "editor.minimap.enabled": false,
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/bower_components": true,
+    "**/__test__/__snapshots__": true,
+    "**/coverage": true,
+    "**/babelCache": true,
+    "**/flow-typed": true
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "problems.decorations.enabled": false,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/babelCache/**": true
+  },
+  "prettier.singleQuote": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Solarized Dark",
+  "editor.formatOnSave": true,
+  "eslint.enable": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "prettier.trailingComma": "all",
+  "workbench.editor.showTabs": true,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true
+}
+
+// .vscode/settings.json
+{
+  "cSpell.words": [
+    "Autocomplete's",
+    "Cmdb",
+    "Infographic",
+    "Instana",
+    "Jira",
+    "Mgmt",
+    "Nessus",
+    "Nexpose",
+    "Qualys",
+    "Scroller",
+    "Snackbar",
+    "Selectable",
+    "testutils",
+    "Trustwave",
+    "Unmount",
+    "Vuln",
+    "paginator",
+    "accum",
+    "autobind",
+    "backend",
+    "hipaa",
+    "ferpa",
+    "Frackend",
+    "ineum",
+    "proptype",
+    "proptypes",
+    "risksense",
+    "debounced",
+    "zmdi"
+  ]
+}
+
+
